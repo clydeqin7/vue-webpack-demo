@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>router test</h2>
-
+    <h2>你好啊，朋友!</h2>
+    <router-link to="/hi/admin">show admin</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'router --> /hi'
     }
   }
 }
